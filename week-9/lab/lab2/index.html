@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="left_sidebar">
+      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" style="font-size: 80px; color: white; margin-bottom: 30px; margin-left: 20%;"></span>
+      <ul class="sidebar-nav">
+        <li>
+          <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+        </li>
+        <li>Manufacturer</li>
+      </ul>
+      <ul class="sidebar-nav">
+        <li>
+          <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+        </li>
+        <li>Purchases</li>
+      </ul>
+      <ul class="sidebar-nav">
+        <li>
+          <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+        </li>
+        <li>Basket secrets</li>
+      </ul>
+    </div>
+    <div class="sidebar">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="font-size: 22px; color: #000;">Manufacturers</a>
+              </div>
+            </div>
+            <div class="col-md-4" style="bottom: 5px;">
+              <ul class="nav navbar-nav navbar-right">
+                <div class="btn-group add_button">
+                  <button type="button" class="btn btn-primary add_button_left">Add New</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle add_button_right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">View History</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">View All Manufacturers</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="input input-group">
+          <input type="text" class="form-control input_text" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default input_button" type="button">
+              <span class="glyphicon glyphicon-search" aria-hidden="true" style="color: #4373F6;"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="item">
+        <h2 class="item-heading">Tandy’s Basketweavers</h2>
+        <div>490 Freedom Drive<br>
+        Philadelphia, PA 19425</div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger btn-lg inventory_button" data-toggle="modal" data-target="#myModal">
+          Low Inventory
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Manufacturer</h4>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <p id="notice">This manufacturer has low inventory</p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 shop_name">Tandy's Basketweavers</div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" style="margin-left: 20%;">
+                          <li><a href="#">Edit</a></li>
+                          <li><a href="#">Delete</a></li>
+                          <li><a href="#">Export</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr style="margin: 0;"/>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3><strong>Address</strong></h3>
+                    <p>490 Freedom Drive<br />Philadelphia, PA 19425</p>
+                  </div>
+                  <div class="col-md-4">
+                    <h3><strong>Contact</strong></h3>
+                    <p>Dave Javies<br />Senior Weaver<br />dj@tbw.com</p>
+                  </div>
+                  <div class="col-md-4">
+                    <p style="font-size: 80px; text-align: center; color:#4EA5B5; margin: 0;">324</p>
+                    <p>Baskets sold in past 7 days</p>
+                  </div>
+                </div>
+              </div>
+              <hr style="margin: 0;"/>
+              <div class="modal-body">
+                <h3><strong>Sales</strong></h3>
+                <table style="width:100%">
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Purchase</th>
+                  </tr>
+                  <tr>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Fruit Basket</td>
+                  </tr>
+                  <tr>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>Gift Basket</td>
+                  </tr>
+                  <tr>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>Easter Basket</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h2 class="item-heading">Basket Case</h2>
+        <div>400 S 46th Street<br>
+        Philadelphia, PA 19144</div>
+      </div>
+      <div class="item">
+        <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
+        <div>2558 Walnut Street<br>
+        Philadelphia, PA 19107</div>
+      </div>
+      <div class="item">
+        <h2 class="item-heading">Bask in the Glory</h2>
+        <div>2501 Walnut Street<br>
+        Philadelphia, PA 19107</div>
+      </div>
+      <div class="item">
+        <h2 class="item-heading">Basket Ball</h2>
+        <div>2542 Walnut Street<br>
+        Philadelphia, PA 19107</div>
+      </div>
+      <div class="sort">
+        Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
+      </div>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Javascript Imports -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/setup.js"></script>
+  </body>
+</html>

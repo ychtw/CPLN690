@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+    color: #464646;
+}
+
+.section-main {
+  padding: 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #464646;
+}
+
+.section-main h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.section-main h2 {
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.section-main {
+  text-align: center;
+}
+
+.section-features {
+  background-color: #eee;
+}
+
+.section-features h3 {
+  text-transform: uppercase;
+}
+
+.section-features h3, .section-features h4, .section-features .featured-image {
+  text-align: center;
+}
+
+.button {
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #666666;
+  text-transform: uppercase;
+  width: 260px;
+}
+
+.button-primary {
+  background-color: #0dc4a3;
+}

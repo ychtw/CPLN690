@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Map -->
+    <div class="header">
+      <ul>
+        <li>
+          <button id="map_button">See full map</button>
+        </li>
+        <li>
+          <button id="sidebar_button">See full sidebar</button>
+        </li>
+      </ul>
+
+    </div>
+    <!-- Button -->
+    <button id="toggle-sidebar">
+      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    </button>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1>Water Monitoring Sites</h1>
+      <p>Source: <a href="http://metadata.phila.gov/#home/datasetdetails/5601853b077169215719b5ce/representationdetails/5618031f275ce6a93cac81be/">PWD Water Monitoring Sites</a></p>
+      <h2 class="h3">Name</h2><p>PWD Monitoring Locations</p>
+      <h2 class="h3">Dataset</h2><p>PWD Monitoring Locations</p>
+      <h2 class="h3">Description</h2><p>Locations where PWD has conducted surface water quality sampling and other types of stream assessments. Monitoring activities may include water quality grab sampling, habitat assessment, and sampling of invertebrates, fish and algae from wadeable streams. Not all assessment activities are performed at all sites.</p>
+      <h2 class="h3">Development Process</h2><p>Point feature class developed for linking and visualizing on site assessment data.</p>
+      <h2 class="h3">Coordinate System</h2><p>NAD_1983_StatePlane_Pennsylvania_South_FIPS_3702_Feet</p>
+      <h2 class="h3">Thematic Mapping</h2><p>SITE_ID is a combination of a watershed prefix (e.g., WS = Wissahcikon Creek) and the rivermile distance from the confluence with the next water body in hundredths of a mile. WS1850 = Wissahickon Creek 18.5 miles from the confluence with the Schuylkill River.</p>
+      <h2 class="h3">Update Frequency</h2><p>As needed</p>
+    </div>
+    <!-- Javascript Imports -->
+    <script src="js/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="js/setup.js"></script>
+  </body>
+</html>

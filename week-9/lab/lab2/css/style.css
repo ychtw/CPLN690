@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 720px;
+    height: 100%;
+    top: 0;
+}
+
+.left_sidebar{
+  position: absolute;
+  left: 0px;
+  width: 220px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.left_sidebar{
+  background-color: #112E3D;
+}
+
+.left_sidebar ul{
+  padding-left: 0px;
+}
+
+.left_sidebar > ul li{
+  list-style: outside none none;
+  color:#fff;
+  margin-top:10px;
+  display:inline-block;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.sidebar {
+    position: absolute;
+    left: 220px;
+    width: 500px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.item {
+    padding: 10px;
+    background-color: #eee;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.item-heading {
+    font-size: 18px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.sort {
+    position: fixed;
+    bottom: 0;
+    left: 220px;
+    width: 340px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.sort-option {
+    margin-left: 10px;
+}
+
+.sort-option.selected {
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar nav.navbar-default {
+    border: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    margin: -14px -20px 20px;
+    padding: 0 5px;
+}
+
+.navbar-brand {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+.inventory_button{
+  font-size: 15px;
+  padding:2px 5px;
+  border-radius: 0;
+  margin-top: 5px;
+}
+
+.add_button{
+  margin:10px;
+}
+
+.add_button_left, .add_button_right, .add_button_left:hover, .add_button_right:hover, .add_button_left:active, .add_button_right:active{
+  border-radius: 0;
+  border-color:white;
+  background-color: #4EA5B5;
+  padding:10px 15px;
+}
+
+.input{
+  margin:15px;
+}
+
+.input_text, .input_button{
+  border-radius: 0;
+}
+
+#notice{
+  background-color: #d9534f;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.shop_name{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+th, td {
+  padding: 5px;
+}
+th{
+  font-size: 17px;
+  font-weight: bolder;
+}

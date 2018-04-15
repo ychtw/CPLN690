@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!-- =====================
+    Edit css/main.css
+    ====================== -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+
+    <!-- =====================
+
+    # Week 4 - Assignment 1
+
+    ## Introduction
+
+    We've got some interesting school data that we're working with. In addition
+    to displaying it on the map, we also want to show it in a list. Notice that
+    our project has an element, .sidebar, that contains no content. We are going
+    to fill it with filtering functionality and a list of schools.
+
+    ## Build components with HTML and CSS
+
+    Take a look at the image assignment-screen.png. Add HTML inside of the
+    element <div class="sidebar"></div> and add CSS inside the file
+    css/style.css to recreate this content in the browser. You do not need to
+    create the list of schools dynamically using the data—just hardcode three schools (in a future assignment, we will generate the list with the same data that we use to generate markers on our map!).
+
+    Start by trying to make it look as much like the image as possible.
+
+    ## Make it look cool
+
+    Try changing the colors or spacing. Make it look a little different. There
+    is no right answer here: just try something and make it your own. Take a
+    look at neat websites on https://www.typewolf.com/ or http://www.awwwards.com/
+    for color or styling inspiration.
+
+    ====================== -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- =====================
+      Add HTML!
+      ====================== -->
+      <h1>Filter</h1>
+      <button>Hide Filters</button>
+
+      <p>By Name</p>
+      <textarea rows="1" cols="20"></textarea>
+
+      <p>By Grade</p>
+      <select id="select">
+        <option value="All Grades"> All Grades </option>
+        <option value="Pre-K">Pre-K</option>
+        <option value="Kindergarten">Kindergarten</option>
+        <option value="Pre-school">Pre-school</option>
+        <option value="Elemantary School">Elemantary School</option>
+        <option value="Middle School">Middle School</option>
+        <option value="High School">High School</option>
+        <option value="Remedial Discipline">Remedial Discipline</option>
+        <option value="Special Center">Special Center</option>
+        <option value="Tutoring">Tutoring</option>
+        <option value="Ungraded">Ungraded</option>
+        <option value="Vo-tech">Vo-tech</option>
+      </select>
+
+      <hr>
+
+      <h1>Schools</h1>
+      <div class="school">
+        <p class="schoolName">Henry, Charles W.</p>
+        <p class="gradeLevel">Elem/Middle</p>
+        <p class="schoolAddress">601 Carpenter La.</p>
+        <p class="zipcode">19119 - 3405</p>
+      </div>
+      <div class="school">
+        <p class="schoolName">Universal Creighton Charter School</p>
+        <p class="gradeLevel">Elem/Middle</p>
+        <p class="schoolAddress">5401 Tabor Ave</p>
+        <p class="zipcode">19120 - 3614</p>
+      </div>
+      <div class="school">
+        <p class="schoolName">Marshall, John</p>
+        <p class="gradeLevel">Elementary School</p>
+        <p class="schoolAddress">4500 Griscom St.</p>
+        <p class="zipcode">19124-3653</p>
+      </div>
+
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+
+    <!-- Javascript Imports -->
+    <script src="js/leaflet.js"></script>
+    <script src="js/underscore.js"></script>
+
+    <!-- Javascript Code -->
+    <script>
+      var map = L.map('map', {
+        center: [39.9522, -75.1639],
+        zoom: 14
+      });
+      var Stamen_TonerLite = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+	      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      	subdomains: 'abcd',
+      	minZoom: 0,
+      	maxZoom: 20,
+      	ext: 'png'
+      }).addTo(map);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  overflow: hidden;
+  font-family: helvetica, arial, sans-serif;
+}
+
+.map {
+  position: absolute;
+  right: 0px;
+  left: 350px;
+  height: 995px;
+  top: 50px;
+}
+
+.top-header{
+  border:0;
+  margin-left:350px;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0px;
+  width: 350px;
+  bottom: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding: 60px 20px;
+  background-color: #202020;
+  color:#BFBFBF;
+}
+
+.sidebar p{
+  font-size: 15px;
+}
+
+.choose_map {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  background-color: #202020;
+  color:#BFBFBF;
+  width: 350px;
+}
+
+.choose_map div{
+  padding: 5px 20px;
+}
+
+.select{
+  list-style-type: none;
+  margin:25px 0 0 0;
+  padding:0;
+}
+
+.select li{
+  margin: 0 5px 0 0;
+  width: 300px;
+  height: 40px;
+  position: relative;
+}
+
+.select label, .select input{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.select label {
+  width:300px;
+  padding:5px;
+  border:1px solid #CCC;
+  cursor:pointer;
+  z-index:90;
+}
+
+.select input[type="radio"] {
+  opacity:0.011;
+  z-index:100;
+}
+
+.select input[type="radio"]:checked + label {
+  background:#BFBFBF;
+  color:#202020;
+}
+
+.select label:hover {
+  background:#BFBFBF;
+  color:#202020;
+}
+
+.buttons {
+  width: 250px;
+  padding: 10px 5%;
+  margin: 10px auto;
+  background-color: #666666;
+  border: 0px;
+  border-radius: 5%;
+  color: #FFFFFF;
+  transition: all 0.5s;
+  display: block;
+}
+
+.buttons:hover{
+  background-color:#CCCCCC;
+  color:#333333;
+}
+
+.about_section a {
+  color: #DDDDDD;
+  text-decoration: none;
+}
+.about_section a:hover{
+  color: #fff;
+  text-decoration: underline;
+}

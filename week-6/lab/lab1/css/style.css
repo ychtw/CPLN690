@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    overflow: hidden;
+    font-family: colfax, helvetica, arial, sans-serif;
+}
+
+p.main {
+  font-size: 24px;
+}
+
+.map {
+    position: absolute;
+    right: 0px;
+    left: 400px;
+    height: 100%;
+    top: 0;
+}
+
+.sidebar {
+    position: absolute;
+    left: 0px;
+    width: 400px;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 20px;
+    font-size: 16px;
+}
+
+button{
+  margin-left: 300px;
+}
+
+.legend {
+  position: absolute;
+  background-color: #F7F7F7;
+  z-index: 2000;
+  left: 80px;
+  bottom:100px;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+}
+
+.small_legend{
+  width:15px;
+  height:15px;
+  display:inline-block;
+}
+
+#legend_title{
+  font-size:25px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.legend div p{
+  display:inline-block;
+  font-size: 20px;
+  margin:10px;
+}
+
+#MON{
+  background-color:#33ccff;
+}
+#TUE{
+  background-color:#9933ff;
+}
+#WED{
+  background-color:#00cc99;
+}
+#THU{
+  background-color:#ff9933;
+}
+#FRI{
+  background-color:#222222;
+}
